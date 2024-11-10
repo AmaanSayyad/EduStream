@@ -21,9 +21,14 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337,
+      chainId: 656476,
     },
     matic: {
       url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.PRIVATE_KEY],
+    },
+     edu: {
+      url: "https://rpc.open-campus-codex.gelato.digital",
       accounts: [process.env.PRIVATE_KEY],
     },
   },
